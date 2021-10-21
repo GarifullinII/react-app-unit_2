@@ -1,6 +1,6 @@
 import Nav from "../Header/Nav";
 
-function Sidebar() {
+function Sidebar(props) {
     return (
         <>
             <ul>
@@ -8,7 +8,7 @@ function Sidebar() {
                 <li>Страница 2</li>
                 <li>Страница 3</li>
             </ul>
-            <Nav/>
+            <Nav propsnav = {props.propssite.nav} />
         </>
     );
 }

@@ -1,9 +1,14 @@
 
-function Nav() {
+function Nav(props) {
+
+    let data = props.propsnav;
+
+    const listItem = data.map(item => <li key={item.link}><a href={item.link}>{item.text}</a></li>);
+
     return (
         <nav>
             <ul className="main-navigation">
-                <li><a href="nav1">my link</a></li>
+                {listItem}
             </ul>
         </nav>
     );

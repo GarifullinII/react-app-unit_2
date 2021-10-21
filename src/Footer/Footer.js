@@ -1,10 +1,10 @@
 import Nav from "../Header/Nav";
 
-function Footer({...site}) {
+function Footer(props) {
     return (
         <footer>
-            <h3>{site.name}</h3>
-            <Nav props={site.nav}/>
+            <h3>{props.propssite.site_name}</h3>
+            <Nav propsnav = {props.propssite.nav} />
         </footer>
     );
 }

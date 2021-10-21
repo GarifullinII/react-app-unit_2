@@ -16,10 +16,10 @@ const site = {
 function App() {
   return (
     <>
-      <Header props = {site}/>
+      <Header propssite = {site}/>
       <Main/>
-      <Sidebar/>
-      <Footer props = {site}/>
+      <Sidebar propssite = {site}/>
+      <Footer propssite = {site}/>
     </>
   );
 }
